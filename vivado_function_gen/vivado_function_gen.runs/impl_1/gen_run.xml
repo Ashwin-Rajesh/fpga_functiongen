@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1683009485">
+  <File Type="CFI_FILE" Name="toplevel.cfi"/>
+  <File Type="RCFI_FILE" Name="toplevel.rcfi"/>
+  <File Type="PDI-FILE" Name="toplevel.pdi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="toplevel_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="toplevel_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="toplevel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="toplevel_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="toplevel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="toplevel_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="toplevel_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="toplevel_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="toplevel_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="toplevel_placed.dcp"/>
+  <File Type="OPT-DCP" Name="toplevel_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="toplevel_bus_skew_routed.rpt"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="toplevel.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="toplevel.sysdef"/>
+  <File Type="BITSTR-MMI" Name="toplevel.mmi"/>
+  <File Type="BITSTR-BMM" Name="toplevel_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="toplevel_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-NKY" Name="toplevel.nky"/>
+  <File Type="BITSTR-RBT" Name="toplevel.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="toplevel_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="toplevel_reports.tcl"/>
+  <File Type="ROUTE-TIMING-RPX" Name="toplevel_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="toplevel.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="toplevel_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="toplevel.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="toplevel_timing_summary_routed.pb"/>
+  <File Type="OPT-DRC" Name="toplevel_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="toplevel.rbd"/>
+  <File Type="BG-BIN" Name="toplevel.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="toplevel_timing_summary_routed.rpt"/>
+  <File Type="NPI_FILE" Name="toplevel.npi"/>
+  <File Type="BG-BGN" Name="toplevel.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="toplevel_routed_bb.dcp"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="toplevel.vdi"/>
+  <File Type="RNPI_FILE" Name="toplevel.rnpi"/>
+  <File Type="BG-DRC" Name="toplevel.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="toplevel_routed_error.dcp"/>
+  <File Type="BG-BIT" Name="toplevel.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="toplevel_route_status.pb"/>
+  <File Type="OPT-HWDEF" Name="toplevel.hwdef"/>
+  <File Type="PLACE-IO" Name="toplevel_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="toplevel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="toplevel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="toplevel_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="toplevel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="toplevel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="toplevel_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="toplevel_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="toplevel_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="toplevel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="toplevel_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="toplevel_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci"/>
+        <Attr Name="ImportTime" Val="1689170747"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cordic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/new/cordic.v"/>
+        <Attr Name="ImportTime" Val="1682710105"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dac_intf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/new/dac_intf.v"/>
+        <Attr Name="ImportTime" Val="1682593092"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../HDD/CollegeWork/dsf/Lex7_board/Lex7_board.srcs/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_segment_intf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/new/seven_segment_intf.v"/>
+        <Attr Name="ImportTime" Val="1682673284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/wavegen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/new/wavegen.v"/>
+        <Attr Name="ImportTime" Val="1682710052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/toplevel.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/new/toplevel.v"/>
+        <Attr Name="ImportTime" Val="1683009452"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/wavegen_n_channel.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/sources_1/new/wavegen_n_channel.sv"/>
+        <Attr Name="ImportTime" Val="1682607882"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="toplevel"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../HDD/CollegeWork/dsf/proj_cordic/proj_cordic.srcs/constrs_1/new/master.xdc"/>
+        <Attr Name="ImportTime" Val="1682672594"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

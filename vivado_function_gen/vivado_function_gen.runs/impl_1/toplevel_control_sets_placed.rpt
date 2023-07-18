@@ -1,0 +1,102 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue May  2 12:12:03 2023
+| Host         : ashwin--Y540-U running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_control_sets -verbose -file toplevel_control_sets_placed.rpt
+| Design       : toplevel
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     3 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              15 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             639 |          170 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             190 |           60 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|        Clock Signal       |                  Enable Signal                  |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+-------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|  clk_wizard/inst/clk_out1 | dac_intf_inst/state_reg_0                       | debouncer_reset/FSM_sequential_state_reg[1]_0[0] |                2 |              4 |         2.00 |
+|  clk_wizard/inst/clk_out1 | inp_mode_sel                                    | debouncer_reset/SS[0]                            |                1 |              4 |         4.00 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_6[0] | debouncer_reset/SS[0]                            |                3 |              8 |         2.67 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_2[0] | debouncer_reset/SS[0]                            |                2 |              8 |         4.00 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_reset/FSM_sequential_state_reg[1]_1[0] |                2 |              8 |         4.00 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_reset/SR[0]                            |                2 |              8 |         4.00 |
+|  clk_wizard/inst/clk_out1 | wavegen_inst/out_channel_sel                    | debouncer_reset/SS[0]                            |                3 |             12 |         4.00 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_1[0] | debouncer_reset/SS[0]                            |                5 |             12 |         2.40 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_5[0] | debouncer_reset/SS[0]                            |                6 |             12 |         2.00 |
+|  clk_wizard/inst/clk_out1 | wavegen_inst/out_ch1[11]_i_1_n_0                | debouncer_reset/SS[0]                            |                4 |             12 |         3.00 |
+|  clk_wizard/inst/clk_out1 |                                                 |                                                  |                7 |             15 |         2.14 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_4[0] | debouncer_reset/SS[0]                            |                5 |             15 |         3.00 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_0[0] | debouncer_reset/SS[0]                            |                5 |             15 |         3.00 |
+|  clk_wizard/inst/clk_out1 | wavegen_inst/ch1_pre_count_reg[6]_0[0]          | debouncer_reset/SS[0]                            |                4 |             16 |         4.00 |
+|  clk_wizard/inst/clk_out1 | wavegen_inst/CO[0]                              | debouncer_reset/SS[0]                            |                4 |             16 |         4.00 |
+|  clk_wizard/inst/clk_out1 |                                                 | seven_seg_intf_inst/div_count[16]_i_1_n_0        |                4 |             16 |         4.00 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/FSM_sequential_state_reg[0]_3[0] | debouncer_reset/SS[0]                            |                5 |             16 |         3.20 |
+|  clk_wizard/inst/clk_out1 | debouncer_left/E[0]                             | debouncer_reset/SS[0]                            |                4 |             16 |         4.00 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_left/count[0]_i_1__0_n_0               |                5 |             19 |         3.80 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_right/count[0]_i_1__1_n_0              |                5 |             19 |         3.80 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_reset/count[0]_i_1_n_0                 |                5 |             19 |         3.80 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_select/count[0]_i_1__2_n_0             |                5 |             19 |         3.80 |
+|  clk_wizard/inst/clk_out1 | dac_intf_inst/ja_OBUF[0]                        | debouncer_reset/SS[0]                            |                7 |             24 |         3.43 |
+|  clk_wizard/inst/clk_out1 |                                                 | debouncer_reset/SS[0]                            |              142 |            531 |         3.74 |
++---------------------------+-------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+
+
