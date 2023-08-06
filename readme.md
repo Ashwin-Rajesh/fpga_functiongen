@@ -34,7 +34,7 @@ Output width is 12 bit (due to the DAC). With this constraint, the phase and val
 
 ![](docs/wavegen.drawio.svg)
 
-A generic CORDIC core that can multiplex any arbitrary number of channels was written in sytem verilog in [```wavegen.sv```](rtl/wavegen_n_channel.sv)
+A generic CORDIC core that can multiplex any arbitrary number of channels was written in sytem verilog in [```wavegen_n_channel.sv```](rtl/wavegen_n_channel.sv)
 
 ---
 
